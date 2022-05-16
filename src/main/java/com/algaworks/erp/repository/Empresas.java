@@ -3,6 +3,7 @@ package com.algaworks.erp.repository;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
 import com.algaworks.erp.model.Empresa;
@@ -10,6 +11,7 @@ import com.algaworks.erp.model.Empresa;
 public class Empresas implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	@Inject
 	private EntityManager em;
 	
 	public Empresas() {
