@@ -3,8 +3,8 @@
 	<Manager pathname="" />
 	
 	<Resource 
-	 auth="Container"
-	 name="BeanManager"
-	 type="javax.persistence.inject.spi.BeanManager"
-	 factory="org.jboss.weld.resources.ManagerObjectFactory" />
+		auth="Container"
+		name="BeanManager" 
+		type="javax.enterprise.inject.spi.BeanManager" 
+		factory="org.jboss.weld.resources.ManagerObjectFactory" />
 </Context>

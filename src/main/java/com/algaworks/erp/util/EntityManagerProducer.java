@@ -14,7 +14,7 @@ public class EntityManagerProducer {
 	private EntityManagerFactory factory;
 	
 	public EntityManagerProducer() {
-		this.factory = Persistence.createEntityManagerFactory("AlgaworksPU");
+		this.factory = Persistence.createEntityManagerFactory("AlgaWorksPU");
 	}
 	
 	@Produces
@@ -23,7 +23,7 @@ public class EntityManagerProducer {
 		return this.factory.createEntityManager();
 	}
 	
-	public void closeEntityManager(@Disposes EntityManager em) {
-		em.close();
+	public void closeEntityManager(@Disposes EntityManager manager) {
+		manager.close();
 	}
 }
